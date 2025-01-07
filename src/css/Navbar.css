@@ -1,0 +1,69 @@
+/* General navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo styling */
+  nav img {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* Link container styling */
+  nav div {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Individual link styling */
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffdd57;
+  }
+  
+  /* Login button styling */
+  nav a:last-child {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:last-child:hover {
+    background-color: white;
+    color: #007bff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav div {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    nav a:last-child {
+      align-self: flex-end;
+    }
+  }
+  
